@@ -33,9 +33,9 @@ class ViewController: UIViewController {
         print("")
         
         //SecondExercise
-        print("SecondExercise")
-        SecondExercise.SumNumber(1234)
-        SecondExercise.SumNumber2(5678)
+        print(SecondExercise.SumNumber2)
+        SecondExercise.SumNumber2(1234)
+      //  SecondExercise.SumNumber2(5678)
         print("")
         
         //ThirdExercise
@@ -118,15 +118,6 @@ class FirstExercise {
 
 //SecondExercise
 class SecondExercise {
-    static func SumNumber(_ x: Int){
-        var sumDigits = 0
-        var num = x
-        for _ in 1 ... String(x).count{
-            sumDigits += num%10
-            num = Int(num/10)
-        }
-        print("Sum of digits \(x) : \(sumDigits)")
-    }
     static func SumNumber2(_ x: Int){
         var sumDigits: Int = 0
         for character in String(x){
